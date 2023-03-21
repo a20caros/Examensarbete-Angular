@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './Navbar/navbar.component';
 import { Perfumes } from './generateProducts/perfumes.component';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { Perfumes } from './generateProducts/perfumes.component';
     NavbarComponent,
     WriteProducts,
     Perfumes,
+    CartComponent,
   ],
   imports: [
     BrowserModule,

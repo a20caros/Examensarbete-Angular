@@ -1,0 +1,16 @@
+.cartProductIthem{
+    background-color: whitesmoke;  
+    width: 350px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    text-align: center;
+    height: 150px;
+    margin-left: 450px;
+    display: absolute;
+    margin-bottom: 50px;
+}
+.cartProductImg{
+    width: 150px;
+    height: 150px;
+    float: left;
+}

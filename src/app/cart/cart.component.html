@@ -1,0 +1,7 @@
+<div class="cartProductIthem" *ngFor="let cartItem of cart.items">
+    <img src={{cartItem.product.img}} class="cartProductImg" />
+    <p><b> {{cartItem.product.name}} </b></p>
+    <p>{{cartItem.product.price}} kr</p>
+    <p>{{cartItem.product.smell}}</p>
+    <p>{{cartItem.product.size}} ml</p>
+</div>
