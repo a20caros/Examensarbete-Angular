@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from './cart.service';
+import { CartItem } from './cartitem.component';
 import { Cart } from './cartProducts.component';
 @Component({
     selector: 'app-cart',
@@ -16,6 +17,11 @@ export class CartComponent implements OnInit{
     }
     ngOnInit(): void {
         
+    }
+    
+    removeProductFromCart(cartitem: CartItem){
+        this.cartService.removeProductFromCart(cartitem.product.id);
+        this.setProductCart();
     }
     
 }
