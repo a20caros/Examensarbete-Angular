@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import {MatIconModule} from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
 import { WriteProducts } from './generateProducts/generatePerfumes.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +23,8 @@ import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.compo
   imports: [
     BrowserModule,
     CommonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
