@@ -7,8 +7,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Navbar/navbar.component';
 import { Perfumes } from './generateProducts/perfumes.component';
 import { CartComponent } from './cart/cart.component';
-
-
+import { MenPerfumes } from './generateMenProducts/menPerfume.component';
+import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,6 +16,8 @@ import { CartComponent } from './cart/cart.component';
     WriteProducts,
     Perfumes,
     CartComponent,
+    MenPerfumes,
+    WriteMenProducts,
   ],
   imports: [
     BrowserModule,
