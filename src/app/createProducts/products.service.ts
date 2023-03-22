@@ -6,6 +6,7 @@ import { Product } from "./product.model";
 })
 
 export class ProductService {
+    private productsKey = 'products';
     private getProductName(): string {
         let productHeading = ' ';
         const character = 'ABCDEFGHIJKLMNOPRSTUV';
@@ -57,4 +58,15 @@ export class ProductService {
         }
         return productArray;
     }
+   
+    savePerfumesToLocalStorage(): void {
+        const products = this.generatePerfumes();
+        const jsonPerfumes = JSON.stringify(products);
+        localStorage.setItem('products', jsonPerfumes);
+      }
+    
+      getPerfumesFromLocalStorage(): any[] {
+        const jsonPerfumes = localStorage.getItem('products') ?? '[]';
+        return JSON.parse(jsonPerfumes);
+      }
 }
