@@ -23,8 +23,6 @@ export class MenPerfumes{
         if (quantity > 0) {
             this.cartService.addProductToCart(this.menProduct, this.quantity);
             this.router.navigateByUrl('/cart');
-        }else{
-            alert('Välj minst en produkt i antal för att kunna lägga till produtken i kundvagnen!')
         }
     }
 }
