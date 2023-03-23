@@ -28,3 +28,6 @@
 #addToCartBtn:hover {
     background-color: lightgray;
 }
+input{
+    text-align: center;
+}

@@ -1,9 +1,11 @@
+<h1 id="yourCart">Din Varukorg</h1>
 <div class="cartProductIthem" *ngFor="let cartItem of cart.items">
     <img src={{cartItem.product.img}} class="cartProductImg" />
     <p><b> {{cartItem.product.name}} </b></p>
     <p>{{cartItem.product.price}} kr</p>
     <p>{{cartItem.product.smell}}</p>
     <p>{{cartItem.product.size}} ml</p>
+    <p>Antalet av produkten: {{cartItem.quantity}}</p>
     <button class="removeProduct" (click)="removeProductFromCart(cartItem)">X</button>
 </div>
 <div>

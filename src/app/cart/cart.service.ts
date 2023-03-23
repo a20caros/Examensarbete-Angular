@@ -11,8 +11,9 @@ export class CartService {
     private cart:Cart = new Cart();
     
 
-    addProductToCart(product:Product): void{
-        this.cart.items.push(new CartItem(product));
+    addProductToCart(product:Product, quantity: number= 1): void{
+        this.cart.items.push(new CartItem(product, quantity));
+        console.log(quantity);
     }
     getProductCart():Cart{
         return this.cart;

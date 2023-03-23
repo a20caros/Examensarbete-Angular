@@ -11,14 +11,15 @@ import { MenProduct } from '../createMenProducts/menProduct.model';
 
 
 export class MenPerfumes{
+    @Input() quantity: number = 0;
     @Input() menProduct!: MenProduct;
     menProducts:MenProduct[] = [];
     constructor(private cartService: CartService, private router:Router ){}
 
 
    
-    addProductToCart(){
-        this.cartService.addProductToCart(this.menProduct);
+    addProductToCart(quantity: number){
+        this.cartService.addProductToCart(this.menProduct, quantity);
         this.router.navigateByUrl('/cart');
     }
 }

@@ -10,6 +10,8 @@ import { Perfumes } from './generateProducts/perfumes.component';
 import { CartComponent } from './cart/cart.component';
 import { MenPerfumes } from './generateMenProducts/menPerfume.component';
 import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.component';
+import {FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +27,7 @@ import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.compo
     CommonModule,
     AppRoutingModule,
     MatIconModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
