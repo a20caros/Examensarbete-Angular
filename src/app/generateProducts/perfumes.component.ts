@@ -19,8 +19,12 @@ export class Perfumes{
 
    
     addProductToCart(quantity:number){
+        if (quantity > 0) {
         this.cartService.addProductToCart(this.product, this.quantity);
         this.router.navigateByUrl('/cart');
+        }else{
+            alert('Välj minst en produkt i antal för att kunna lägga till produtken i kundvagnen!')
+        }
     }
     
 }

@@ -19,7 +19,12 @@ export class MenPerfumes{
 
    
     addProductToCart(quantity: number){
-        this.cartService.addProductToCart(this.menProduct, quantity);
-        this.router.navigateByUrl('/cart');
+        //An if statement that checks if the number of the product the user selected is greater than 0
+        if (quantity > 0) {
+            this.cartService.addProductToCart(this.menProduct, this.quantity);
+            this.router.navigateByUrl('/cart');
+        }else{
+            alert('Välj minst en produkt i antal för att kunna lägga till produtken i kundvagnen!')
+        }
     }
 }
