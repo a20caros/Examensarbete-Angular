@@ -1,4 +1,5 @@
 <h1 id="yourCart">Din Varukorg</h1>
+<!--Loops through the cartItem to display the products added to the cart-->
 <div class="cartProductIthem" *ngFor="let cartItem of cart.items">
     <img src={{cartItem.product.img}} class="cartProductImg" />
     <p><b> {{cartItem.product.name}} </b></p>
@@ -6,8 +7,10 @@
     <p>{{cartItem.product.smell}}</p>
     <p>{{cartItem.product.size}} ml</p>
     <p>Antalet av produkten: {{cartItem.quantity}}</p>
+    <!--A button that deletes a product in the shopping cart-->
     <button class="removeProduct" (click)="removeProductFromCart(cartItem)">X</button>
 </div>
 <div>
+    <!--Calculates the total price for all products in the shopping cart-->
     <p class='totalPrice'>Totala priset: {{cart.cartTotalPrice}} kr</p>
 </div>

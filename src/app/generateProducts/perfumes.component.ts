@@ -21,7 +21,7 @@ export class Perfumes{
     addProductToCart(quantity:number){
         if (quantity > 0) {
         this.cartService.addProductToCart(this.product, this.quantity);
-        this.router.navigateByUrl('/cart');
+        //this.router.navigateByUrl('/cart');
         }
     }
     
