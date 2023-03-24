@@ -13,7 +13,12 @@ export class CartService {
     
     //The method takes two parameters: a product and quantity, and adds a new CartItem to the cart's items array.
     addProductToCart(product:Product, quantity: number= 1): void{
+        const alreadyExistingItem = this.cart.items.find(item => item.product.id === product.id);
+        if(alreadyExistingItem){
+            alreadyExistingItem.quantity += quantity;
+        }else{
         this.cart.items.push(new CartItem(product, quantity));
+        }
     }
     //This method returns an instance of the Cart class (cart) containing all the items added.
     getProductCart():Cart{
