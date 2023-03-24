@@ -1,0 +1,7 @@
+table, th, td {
+    border:1px solid black;
+  }
+.imagesInformation {
+    height: 70px;
+    width: 70px;
+}
