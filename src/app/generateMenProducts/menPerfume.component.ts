@@ -16,7 +16,9 @@ export class MenPerfumes{
     menProducts:MenProduct[] = [];
     constructor(private cartService: CartService, private router:Router ){}
 
-
+    addProduct() {
+        this.quantity += 1;
+      }
    
     addProductToCart(quantity: number){
         //An if statement that checks if the number of the product the user selected is greater than 0

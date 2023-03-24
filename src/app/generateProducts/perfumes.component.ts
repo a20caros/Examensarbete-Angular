@@ -16,12 +16,14 @@ export class Perfumes{
     products:Product[] = [];
     constructor(private cartService: CartService, private router:Router ){}
 
-
+    addProduct() {
+        this.quantity += 1;
+      }
    
     addProductToCart(quantity:number){
         if (quantity > 0) {
         this.cartService.addProductToCart(this.product, this.quantity);
-        //this.router.navigateByUrl('/cart');
+        this.router.navigateByUrl('/cart');
         }
     }
     
