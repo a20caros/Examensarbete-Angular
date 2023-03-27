@@ -7,6 +7,6 @@
         <p>{{product.smell}}</p>
         <p>{{product.size}} ml</p>
         Välj antalet produkter<input type="text" [(ngModel)]="quantity" (ngModelChange)="addProductToCart(quantity)">
-        <button (click)="addProduct(); addProductToCart(quantity)">+</button>
+        <button id='addToCartButton'(click)="addProduct(); addProductToCart(quantity)">+</button>
     </div>
 </div>

@@ -1,0 +1,52 @@
+.backgroundimg{
+    background-image: url('/assets/images/fronPagePicture.png');
+    height: 500px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.homePageDiv{
+    width: 800px;
+    Height: 200px;
+    margin: auto;
+    z-index: 1;
+    text-align: center;
+    padding: 30px;
+    color: white;   
+    margin-top: -250px;
+    background-color: transparent;
+}
+.homePageDiv h3{
+    font-size: 40px;
+}
+.homePageDiv h5{
+    font-size: 20px;  
+}
+.parfymeImg{
+    float: left; 
+    padding-left: 220px;
+    margin-top: 80px;
+}
+.parfymeImg img{
+    border-radius:15px; 
+}
+.handParfyme{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 60px;
+}
+.homePageParfymeDiv{
+    margin-left: 800px;
+    z-index: 1;
+    margin-top: -500px;
+    font-size: 25px;
+    color: white;
+    width: 300px;
+}
+.parfymeflower{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}

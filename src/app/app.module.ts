@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { MenPerfumes } from './generateMenProducts/menPerfume.component';
 import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.component';
 import {FormsModule} from '@angular/forms';
+import { HomePageComponent } from './homePage/homePage.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {FormsModule} from '@angular/forms';
     CartComponent,
     MenPerfumes,
     WriteMenProducts,
+    HomePageComponent,
   ],
   imports: [
     BrowserModule,
