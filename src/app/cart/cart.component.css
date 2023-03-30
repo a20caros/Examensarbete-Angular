@@ -14,7 +14,7 @@
     height: 153px;
     float: left;
 }
-.removeProduct{
+#removeProduct{
     background-color: whitesmoke;  
     text-align: center;
     border:none;

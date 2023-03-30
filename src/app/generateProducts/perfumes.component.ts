@@ -13,7 +13,7 @@ import { Product } from '../createProducts/product.model';
 export class Perfumes{
     @Input() quantity: number = 0;
     @Input() product!: Product;
-    products:Product[] = [];
+    
     constructor(private cartService: CartService, private router:Router ){}
 
     addProduct() {

@@ -6,7 +6,7 @@ import { Product } from "./product.model";
 })
 
 export class ProductService {
-    private productsKey = 'products';
+    /*private productsKey = 'products';
     private getProductName(): string {
         let productHeading = ' ';
         const character = 'ABCDEFGHIJKLMNOPRSTUV';
@@ -57,16 +57,22 @@ export class ProductService {
             
         }
         return productArray;
-    }
-   
-    savePerfumesToLocalStorage(): void {
-        const products = this.generatePerfumes();
+    }*/
+    /*generatePerfumes(): Product[] {
+        const productArray: Product[] = [];
+        const PRODUCT = [{ "id":"lfuwryxt-0t199j","name":"MEUHVU","price":671,"size":6,"smell":"Doft av mandel"},{"id":"lfuwryxt-y5vf8v","name":"OGIOUV","price":383,"size":9,"smell":"Doft av vanilj"},{"id":"lfuwryxt-cvfslb","name":"MCLGVR","price":626,"size":5,"smell":"Doft av citrusfrukter"},{"id":"lfuwryxt-4efalb","name":"HUUHOL","price":902,"size":3,"smell":"Doft av äpple"},{"id":"lfuwryxt-bqmt6k","name":"RKELLU","price":272,"size":8,"smell":"Doft av äpple"},{"id":"lfuwryxt-h2kxxm","name":"PTBKGS","price":218,"size":9,"smell":"Doft av mandel"},{"id":"lfuwryxt-ghbd33","name":"OMNPCB","price":520,"size":8,"smell":"Doft av mandel"},{"id":"lfuwryxt-v3jdzf","name":"ICFEFN","price":850,"size":3,"smell":"Doft av rosor"},{"id":"lfuwryxt-3nh74k","name":"RTFMTI","price":453,"size":6,"smell":"Doft av äpple"},{"id":"lfuwryxt-lpzqtv","name":"OFJICI","price":360,"size":6,"smell":"Doft av äpple"}];
+        productArray.push(PRODUCT);
+        return productArray;
+    }*/
+       /* savePerfumesToLocalStorage(): void {
+        const products =  this.generatePerfumes();
         const jsonPerfumes = JSON.stringify(products);
         localStorage.setItem('products', jsonPerfumes);
-      }
-    
+      }*/
+      
       getPerfumesFromLocalStorage(): any[] {
-        const jsonPerfumes = localStorage.getItem('products') ?? '[]';
+        const jsonPerfumes = localStorage.getItem('product') ?? '[]';
         return JSON.parse(jsonPerfumes);
       }
+      //const products = [{"id":"lfuwryxt-0t199j","name":"MEUHVU","price":671,"size":"6 ml","smell":"Doft av mandel"},{"id":"lfuwryxt-y5vf8v","name":"OGIOUV","price":383,"size":"9 ml","smell":"Doft av vanilj"},{"id":"lfuwryxt-cvfslb","name":"MCLGVR","price":626,"size":"5 ml","smell":"Doft av citrusfrukter"},{"id":"lfuwryxt-4efalb","name":"HUUHOL","price":902,"size":"3 ml","smell":"Doft av äpple"},{"id":"lfuwryxt-bqmt6k","name":"RKELLU","price":272,"size":"8 ml","smell":"Doft av äpple"},{"id":"lfuwryxt-h2kxxm","name":"PTBKGS","price":218,"size":"9 ml","smell":"Doft av mandel"},{"id":"lfuwryxt-ghbd33","name":"OMNPCB","price":520,"size":"8 ml","smell":"Doft av mandel"},{"id":"lfuwryxt-v3jdzf","name":"ICFEFN","price":850,"size":"3 ml","smell":"Doft av rosor"},{"id":"lfuwryxt-3nh74k","name":"RTFMTI","price":453,"size":"6 ml","smell":"Doft av äpple"},{"id":"lfuwryxt-lpzqtv","name":"OFJICI","price":360,"size":"6 ml","smell":"Doft av äpple"}];
 }

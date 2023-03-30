@@ -8,7 +8,7 @@
     <p>{{cartItem.product.size}} ml</p>
     <p>Antalet av produkten: {{cartItem.quantity}}</p>
     <!--A button that deletes a product in the shopping cart-->
-    <button class="removeProduct" (click)="removeProductFromCart(cartItem)">X</button>
+    <button id="removeProduct" (click)="removeProductFromCart(cartItem)">X</button>
 </div>
 <div>
     <!--Calculates the total price for all products in the shopping cart-->
