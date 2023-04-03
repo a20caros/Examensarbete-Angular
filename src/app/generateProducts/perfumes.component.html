@@ -6,7 +6,7 @@
         <p>{{product.price}} kr</p>
         <p>{{product.smell}}</p>
         <p>{{product.size}} ml</p>
-        Välj antalet produkter<input [id]="product.id" type="text" [(ngModel)]="quantity" (ngModelChange)="addProductToCart(quantity)">
+        Välj antalet produkter<input [id]="product.id" type="text" [(ngModel)]="quantity" (ngModelChange)="addProductToCart(quantity)"  #myInput>
         <button id='addToCartButton'(click)="addProduct(); addProductToCart(quantity)">+</button>
     </div>
 </div>

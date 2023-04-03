@@ -19,11 +19,5 @@ export class WriteProducts implements OnInit {
   ngOnInit(): void {
       this.products = this.productService.getPerfumesFromLocalStorage();
   }
- 
-  /*addToCart(index: number){
-    const product = this.products[index];
-    this.cartService.addProductToCart(this.product);
-    this.router.navigateByUrl('/cart');
-  }*/
 
 }

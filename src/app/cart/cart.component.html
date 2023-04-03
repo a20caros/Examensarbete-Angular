@@ -1,6 +1,6 @@
 <h1 id="yourCart">Din Varukorg</h1>
 <!--Loops through the cartItem to display the products added to the cart-->
-<div class="cartProductIthem" *ngFor="let cartItem of cart.items">
+<div class="cartProductIthem" id="cartitems"*ngFor="let cartItem of cart.items">
     <img src={{cartItem.product.img}} class="cartProductImg" />
     <p><b> {{cartItem.product.name}} </b></p>
     <p>{{cartItem.product.price}} kr</p>

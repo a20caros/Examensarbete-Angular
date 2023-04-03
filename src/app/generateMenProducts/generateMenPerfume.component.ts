@@ -13,10 +13,7 @@ import { ProductMenService } from '../createMenProducts/menProducts.service';
 
 export class WriteMenProducts implements OnInit {
   menProducts:MenProduct[] = [];
-  constructor(private productMenService:ProductMenService){
-    if (!localStorage.getItem('menProducts')) {
-    this.productMenService.saveMenPerfumesToLocalStorage();
-  }}
+  constructor(private productMenService:ProductMenService){}
 
   ngOnInit(): void {
       this.menProducts = this.productMenService.getMenPerfumesFromLocalStorage();

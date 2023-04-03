@@ -7,7 +7,7 @@ import { MenProduct } from "./menProduct.model";
 
 export class ProductMenService {
     //Generates a random name of a perfume for men
-    private getMenProductName(): string {
+    /*private getMenProductName(): string {
         //The name is created by randomly taking 6 letters through a for loop and assigning it to the variable productmenheading
         let productMenHeading = ' ';
         const character = 'ABCDEFGHIJKLMNOPRSTUV';
@@ -79,7 +79,7 @@ export class ProductMenService {
         const menProducts = this.generateMenPerfumes();
         const jsonMenPerfumes = JSON.stringify(menProducts);
         localStorage.setItem('menProducts', jsonMenPerfumes);
-      }
+      }*/
     
       getMenPerfumesFromLocalStorage(): any[] {
         const jsonMenPerfumes = localStorage.getItem('menProducts') ?? '[]';
