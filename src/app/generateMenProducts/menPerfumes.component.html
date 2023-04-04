@@ -1,4 +1,4 @@
-
+<!--Prints the products for men-->
 <div class='fullContainer'>
     <div class="perfumeContainer" >
         <img src={{menProduct.img}}>
@@ -6,7 +6,9 @@
         <p>{{menProduct.price}} kr</p>
         <p>{{menProduct.smell}}</p>
         <p>{{menProduct.size}}</p>
+        <!--An input where the user fills in the number of products to be added to the shopping cart-->
         Välj antalet produkter<input type="text" [(ngModel)]="quantity" (ngModelChange)="addProductToCart(quantity)">
+        <!--Button to add the product to the shopping cart-->
         <button (click)="addProduct(); addProductToCart(quantity)">+</button>
     </div>
 </div>

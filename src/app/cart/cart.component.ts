@@ -25,10 +25,11 @@ export class CartComponent implements AfterViewInit  {
        
     }
     ngAfterViewInit() {
-        // Kod som körs när DOMen initialiseras
+        // Checks if cartiem's ​​id has been printed and then stops time
         if (document.getElementById("cartitems") !== null) {
           let stopTime = Date.now();
           console.log('slut '+ stopTime);
+          //Sets the stop time in local storage
           window.localStorage.setItem('stopTime',String(stopTime) );
         } 
       }

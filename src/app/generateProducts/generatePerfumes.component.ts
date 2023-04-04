@@ -13,9 +13,10 @@ import {Router } from '@angular/router';
 
 
 export class WriteProducts implements OnInit {
+//fetching a list of products for women
   products:Product[] = [];
   constructor(private productService:ProductService, private cartService: CartService, private router:Router ){}
-
+  //Called when the component is initialized and used to retrieve the products to assign to the women Products array
   ngOnInit(): void {
       this.products = this.productService.getPerfumesFromLocalStorage();
   }

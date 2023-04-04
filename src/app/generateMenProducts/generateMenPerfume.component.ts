@@ -12,9 +12,10 @@ import { ProductMenService } from '../createMenProducts/menProducts.service';
 
 
 export class WriteMenProducts implements OnInit {
+  //fetching a list of products for men
   menProducts:MenProduct[] = [];
   constructor(private productMenService:ProductMenService){}
-
+  //Called when the component is initialized and used to retrieve the products to assign to the menProducts array
   ngOnInit(): void {
       this.menProducts = this.productMenService.getMenPerfumesFromLocalStorage();
   }

@@ -6,6 +6,7 @@ import { Injectable } from "@angular/core";
 })
 
 export class ProductService {  
+    //Get the women products from localstorage
       getPerfumesFromLocalStorage(): any[] {
         const jsonPerfumes = localStorage.getItem('producttttttt') ?? '[]';
         return JSON.parse(jsonPerfumes);
