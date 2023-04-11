@@ -12,6 +12,7 @@ import { MenPerfumes } from './generateMenProducts/menPerfume.component';
 import { WriteMenProducts } from './generateMenProducts/generateMenPerfume.component';
 import {FormsModule} from '@angular/forms';
 import { HomePageComponent } from './homePage/homePage.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HomePageComponent } from './homePage/homePage.component';
     AppRoutingModule,
     MatIconModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

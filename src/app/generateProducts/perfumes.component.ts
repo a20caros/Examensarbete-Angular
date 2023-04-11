@@ -25,7 +25,7 @@ export class Perfumes{
         if (quantity > 0) {
         this.cartService.addProductToCart(this.product, this.quantity);
          //Send it to the cart page immediately
-        this.router.navigateByUrl('/cart');
+        //this.router.navigateByUrl('/cart');
         }
     }
     
